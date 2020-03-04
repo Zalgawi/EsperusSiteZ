@@ -1,0 +1,12 @@
+﻿@import 'Globals/_variables.scss';
+@import 'Globals/_mixins.scss';
+
+@import 'page-testimonials.scss';
+
+body {
+  @media screen and (max-width: 768px) {
+    .page {
+      min-width: unset !important;
+    }
+  }
+}

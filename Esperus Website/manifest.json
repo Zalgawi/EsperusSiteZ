@@ -1,0 +1,20 @@
+{
+  "short_name": "Esperus",
+  "name": "Esperus Systems",
+  "icons": [
+    {
+      "src": "/website-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/website-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#2699FB",
+  "theme_color": "#2699FB",
+  "display": "standalone",
+  "start_url": "/"
+}

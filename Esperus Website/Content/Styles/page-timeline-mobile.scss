@@ -1,0 +1,95 @@
+﻿@import 'Globals/_variables.scss';
+@import 'Globals/_mixins.scss';
+
+@import 'page-timeline.scss';
+
+body {
+  @media screen and (max-width: 768px) {
+    .timeline-wrapper {
+      .timeline-orb {
+        left: 95% !important;
+
+        &.top {
+          margin-left: -29px;
+        }
+
+        &.bottom {
+          margin-left: -29px;
+          bottom: 10px;
+        }
+      }
+
+      .timeline {
+        &:before {
+          left: 97.5%;
+        }
+
+        li {
+          &.timeline-inverted {
+            .timeline-badge {
+              p {
+                position: absolute;
+                top: 6px;
+                left: 32px;
+                margin: 0;
+                line-height: 1;
+                color: $colour-light-blue;
+                font-weight: 600;
+              }
+            }
+
+            .timeline-panel {
+              float: left;
+
+              &:before {
+                border-left-width: 15px;
+                border-right-width: 0;
+                right: -15px;
+                left: unset;
+              }
+
+              &:after {
+                border-left-width: 14px;
+                border-right-width: 0;
+                right: -14px;
+                left: unset;
+              }
+            }
+          }
+
+          .timeline-badge {
+            left: 97.5%;
+          }
+
+          .timeline-panel {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .timeline-wrapper {
+      .timeline {
+        li {
+          &.timeline-inverted {
+            .timeline-badge {
+              p {
+                top: 32px;
+                left: -3px;
+              }
+            }
+          }
+
+          .timeline-badge {
+            p {
+              top: 32px;
+              left: -3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

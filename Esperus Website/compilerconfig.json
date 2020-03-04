@@ -1,0 +1,182 @@
+﻿[
+  {
+    "outputFile": "Content/Styles/main.css",
+    "inputFile": "Content/Styles/main.scss"
+  },
+  {
+    "outputFile": "Content/Styles/main-mobile.css",
+    "inputFile": "Content/Styles/main-mobile.scss"
+  },
+  {
+    "outputFile": "Content/Styles/partials-mobile.css",
+    "inputFile": "Content/Styles/partials-mobile.scss"
+  },
+  {
+    "outputFile": "Content/Styles/admin-panel.css",
+    "inputFile": "Content/Styles/admin-panel.scss"
+  },
+  {
+    "outputFile": "Content/Styles/admin-panel-mobile.css",
+    "inputFile": "Content/Styles/admin-panel-mobile.scss"
+  },
+  {
+    "outputFile": "Content/Styles/Libs/Trumbowyg/trumbowyg.css",
+    "inputFile": "Content/Styles/Libs/Trumbowyg/trumbowyg.scss"
+  },
+  {
+    "outputFile": "Content/Styles/Globals/_mixins.css",
+    "inputFile": "Content/Styles/Globals/_mixins.scss"
+  },
+  {
+    "outputFile": "Content/Styles/Globals/_variables.css",
+    "inputFile": "Content/Styles/Globals/_variables.scss"
+  },
+  {
+    "outputFile": "Content/Styles/admin.css",
+    "inputFile": "Content/Styles/admin.scss"
+  },
+  {
+    "outputFile": "Content/Styles/admin-mobile.css",
+    "inputFile": "Content/Styles/admin-mobile.scss"
+  },
+  {
+    "outputFile": "Content/Scripts/main.carousel.es5.js",
+    "inputFile": "Content/Scripts/main.carousel.js"
+  },
+  {
+    "outputFile": "Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.colors.css",
+    "inputFile": "Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.colors.scss"
+  },
+  {
+    "outputFile": "Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.specialchars.css",
+    "inputFile": "Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.specialchars.scss"
+  },
+  {
+    "outputFile": "Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.table.css",
+    "inputFile": "Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.table.scss"
+  },
+  {
+    "outputFile": "Content/Scripts/Libs/Trumbowyg/Langs/ca.min.es5.js",
+    "inputFile": "Content/Scripts/Libs/Trumbowyg/Langs/ca.min.js"
+  },
+  {
+    "outputFile": "Content/Styles/admin-old.css",
+    "inputFile": "Content/Styles/admin-old.scss"
+  },
+  {
+    "outputFile": "Content/Styles/admin-editor.css",
+    "inputFile": "Content/Styles/admin-editor.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Globals/_mixins.css",
+    "inputFile": "Areas/Admin/Content/Styles/Globals/_mixins.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Globals/_variables.css",
+    "inputFile": "Areas/Admin/Content/Styles/Globals/_variables.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin-editor.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin-editor.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin-mobile.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin-mobile.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin-old.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin-old.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/trumbowyg.css",
+    "inputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/trumbowyg.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.colors.css",
+    "inputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.colors.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.table.css",
+    "inputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.table.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.specialchars.css",
+    "inputFile": "Areas/Admin/Content/Styles/Libs/Trumbowyg/Plugins/trumbowyg.specialchars.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Scripts/admin.editor.es5.js",
+    "inputFile": "Areas/Admin/Content/Scripts/admin.editor.js"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin-editor-mobile.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin-editor-mobile.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin.editor.mobile.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin.editor.mobile.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin.editor.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin.editor.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin.mobile.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin.mobile.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/admin.old.css",
+    "inputFile": "Areas/Admin/Content/Styles/admin.old.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Styles/Libs/bootstrap.treeview.css",
+    "inputFile": "Areas/Admin/Content/Styles/Libs/bootstrap.treeview.scss"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Scripts/Libs/bootstrap.treeview.es5.js",
+    "inputFile": "Areas/Admin/Content/Scripts/Libs/bootstrap.treeview.js"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Scripts/Libs/Trumbowyg/Langs/hr.min.es5.js",
+    "inputFile": "Areas/Admin/Content/Scripts/Libs/Trumbowyg/Langs/hr.min.js"
+  },
+  {
+    "outputFile": "Areas/Admin/Content/Scripts/Libs/Trumbowyg/Langs/th.min.es5.js",
+    "inputFile": "Areas/Admin/Content/Scripts/Libs/Trumbowyg/Langs/th.min.js"
+  },
+  {
+    "outputFile": "Content/Styles/page.testimonials.css",
+    "inputFile": "Content/Styles/page.testimonials.scss"
+  },
+  {
+    "outputFile": "Content/Styles/page-testimonials.css",
+    "inputFile": "Content/Styles/page-testimonials.scss"
+  },
+  {
+    "outputFile": "Content/Styles/page-withdraw.css",
+    "inputFile": "Content/Styles/page-withdraw.scss"
+  },
+  {
+    "outputFile": "Content/Styles/page-timeline.css",
+    "inputFile": "Content/Styles/page-timeline.scss"
+  },
+  {
+    "outputFile": "Content/Styles/page-testimonials-mobile.css",
+    "inputFile": "Content/Styles/page-testimonials-mobile.scss"
+  },
+  {
+    "outputFile": "Content/Styles/page-timeline-mobile.css",
+    "inputFile": "Content/Styles/page-timeline-mobile.scss"
+  },
+  {
+    "outputFile": "Content/Scripts/main.es5.js",
+    "inputFile": "Content/Scripts/main.js"
+  },
+  {
+    "outputFile": "Content/Scripts/main.form.es5.js",
+    "inputFile": "Content/Scripts/main.form.js"
+  }
+]

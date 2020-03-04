@@ -1,0 +1,117 @@
+﻿@import 'Globals/_variables.scss';
+@import 'Globals/_mixins.scss';
+
+body {
+  .page {
+    background-color: $colour-light-grey;
+    border: 1px solid $colour-dimmer-grey;
+    box-shadow: $box-shadow-light;
+    border-radius: .25rem;
+
+    .page-header {
+      position: relative;
+      height: 392px;
+      color: white;
+      border-bottom: 1px solid $colour-dimmer-grey;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+
+      .header-overlay {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.35;
+        top: 0;
+      }
+
+      .header-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+
+        .header-content-inner {
+          color: white;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          margin: 0 auto;
+          height: 100%;
+
+          .page-tab {
+            position: absolute;
+            top: 0;
+            left: 32px;
+            background-color: black;
+            color: white;
+            width: 128px;
+            height: 32px;
+            font-weight: 500;
+            font-size: 1.4rem;
+            padding-top: 6px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+
+            i {
+              margin-right: 5px;
+            }
+          }
+
+          h1 {
+            color: white;
+            text-shadow: $text-shadow-close-heavy;
+          }
+        }
+      }
+    }
+
+    .page-divide {
+      text-align: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-top: 1px solid $colour-dimmer-grey;
+      border-bottom: 1px solid $colour-dimmer-grey;
+
+      &.first {
+        border-top: 0;
+      }
+
+      p {
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 0;
+      }
+
+      a {
+        margin: 0;
+        display: inline-block;
+      }
+
+      &:last-child {
+        border-top: 1px solid $colour-dimmer-grey;
+        border-bottom: 0;
+      }
+    }
+
+    .page-content {
+      width: 90%;
+      margin: 0 auto;
+      padding: 32px 0 32px 0;
+
+      h6 {
+        margin-top: 32px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

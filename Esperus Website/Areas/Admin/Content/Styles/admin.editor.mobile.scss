@@ -1,0 +1,52 @@
+﻿@import 'admin.editor.scss';
+
+body {
+  .navbar {
+    .navbar-header {
+      .hierarchy-open {
+        display: none; // Switched to 'block' in JS.
+        margin-left: 0;
+      }
+    }
+  }
+
+  form {
+    &.editor-form {
+      .hierarchy-wrapper {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: absolute;
+        z-index: 1000;
+        left: 0;
+        overflow-x: hidden;
+        transition: .35s;
+
+        &.show {
+          width: 300px;
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+          .hierarchy-header {
+            opacity: 1;
+            transition: $transition-sidenav-open;
+          }
+
+          .hierarchy {
+            opacity: 1;
+            transition: $transition-sidenav-open;
+          }
+        }
+      }
+
+      .hierarchy-header {
+        opacity: 0;
+        transition: $transition-sidenav-close;
+      }
+
+      .hierarchy {
+        opacity: 0;
+        transition: $transition-sidenav-close;
+      }
+    }
+  }
+}

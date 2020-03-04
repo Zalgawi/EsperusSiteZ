@@ -1,0 +1,191 @@
+﻿@import 'admin.scss';
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    margin-top: 20px;
+  }
+
+  .body-content {
+    padding: 0;
+  }
+}
+
+body {
+  #main {
+    transition: margin-left 0.25s;
+  }
+
+  .body-wrapper {
+    z-index: 999;
+  }
+
+  .navbar {
+    min-height: 48px;
+    height: unset;
+
+    .navbar-header {
+      width: 100%;
+      height: 48px;
+
+      .navbar-toggler {
+        margin-left: auto;
+        padding: 0;
+        border: 0;
+        color: white;
+        font-size: 2rem;
+        width: 64px;
+      }
+    }
+  }
+
+  .report-container {
+    flex-direction: column;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+
+    .report-wrapper {
+      width: 100%;
+      margin-bottom: 8px;
+
+      &.report-small {
+        width: 100%;
+      }
+    }
+  }
+
+  .nav-sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: $colour-grey-primary;
+    overflow-x: hidden;
+    transition: 0.35s;
+    border-left: 1px solid $colour-grey-secondary;
+
+    &.show {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+
+      .sidenav-nav {
+        .sidenav-item {
+          a {
+            opacity: 1;
+            transition: $transition-sidenav-open;
+          }
+        }
+      }
+    }
+
+    .sidenav-header {
+      height: 48px;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .sidebar-close {
+      padding: 0;
+      font-size: 2rem;
+      width: 64px;
+      display: flex;
+      justify-content: center;
+      height: 64px;
+      align-items: center;
+      text-decoration: none;
+      transition: $transition-link-default;
+
+      &:focus,
+      &:hover {
+        color: $colour-blue-primary;
+        transition: $transition-link-default;
+      }
+    }
+
+    .sidenav-nav {
+      padding: 0;
+
+      .sidenav-item {
+        width: 100%;
+
+        &.selected {
+          background-color: white;
+          border-bottom: 1px solid $colour-grey-secondary;
+        }
+
+        a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 1.6rem;
+          color: black;
+          opacity: 0;
+          display: block;
+          transition: $transition-sidenav-close;
+
+          &:hover {
+            color: black;
+            background-color: $colour-grey-secondary;
+            transition: $transition-link-default;
+          }
+
+          &.selected {
+            background-color: $colour-grey-secondary;
+            color: black;
+
+            &:hover,
+            &:focus {
+              color: black;
+            }
+          }
+        }
+
+        .sidenav-icon {
+          width: 24px;
+          display: inline-flex;
+          justify-content: flex-start;
+        }
+
+        .sidenav-menu {
+          display: none;
+
+          &.show {
+            display: block;
+          }
+
+          .menu-header {
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 24px;
+            color: black;
+            padding: 8px 8px 8px 32px;
+            margin: 0;
+            border-top: 1px solid $colour-grey-secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    .login-wrapper {
+      .login-container {
+        width: 100%;
+        border-radius: 0;
+
+        .login-form {
+          .login-row {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "esperus-cms",
+  "private_key_id": "e52a653700c6d0792e977a6c717c67a593ba288e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2/sWyhanaELXf\nvTPwaLmu9B5u+w4MVhe1/mB1ywfBjVSz9UKNq2I4Shxu+SSaZbjpZq8AGivbZdOj\nnY6BFjCav4kuOTgwMNcmI1buQroUwm8Nqd/rhQAJi3F8tkIEd4h4S2Gi1cr179fP\nbfgUWdYwqeXOzGXe6nI+Mr+j5tU2t8AOGcOcCvaH6OgYWT1bKHABBC7FUqy2W/tP\nwrxoo5ABJObCcBPJvAkqLTbPZCN2xb0/gCuxgE3Ff6nlrLGzNDUQPqEAMS//dha+\nYUFqeei0vYww5HzsP9oT9YkdtSDEoTtuYD19dtX9rZuLcZRYm6ass1pRCDeIiXBk\nvdkORgitAgMBAAECggEATznHMs6epjvk2eyKr5NPjLjA8lB8GQgu9MqgTW8suPXs\nzYqqGTaxa+heHgd8euH+aAJeUp+CDFcuBSCiAS4vtdel1x7LvkVu6GKVcMrv0CwL\ns3Ev8kIfLYKzDAjGVTPBID+Wkk6YM9j2aKZWKM1qJ6Buz5T7p8J92oLTKG04Mxso\nD3x8cESU3wsZpzpcDbM+Pids2GLr2SDKgRW422tmHNK9hvnOEG/AKlXy9ZMZWNiT\nGFWo5EuuWO0xdYoT0o2dAV8V089Tme56+0SqIvM3ptRiAA6j59JjnQM/3AtncsLH\nhViZWWZHoSWO+n74PIAp40wNnT51OL2qO5eBb3i8OwKBgQDiV/bsyDWPdyOXgDoN\nzbHa8uHMFa3KBL32tgIkFggNVu4g9WGXHMPF51GPFy5MlxPRnkOoxr8NORwIsYUU\nY5Z2InX9hJqMbWfDV0SGxl9+WrYBHEdYw6Sy2epYnadapQ3t9t8YcL/T/hcrv6bW\n+Kx9v03dCdLRl/sBIx9/HKSE/wKBgQDO+M/dSQkmYKbZO4mLhLe9IAUZNDtcWAJO\ncR84EugB5fLiWcut9XsVZ0yD1jyWwYGkPE7wFKedCFgviUAKJx1gq79KHH6PBiJd\nlRplybE3dbb2/81ac63+KD0xfXLMiEeNN/wmuS3J7udBMJipqlSGMXw8Y+B/K1fx\nhDKuWX8WUwKBgDLcv4Ev8FE/3YCi8Oi/K1NfNvxMdtQpwqJY/hwr0z1kJnjDi12Q\nujGTrJEyDVZqsKpvHRclKjOHfNQ7SANv6ZS8Y7VHgg9CWonb52s90qGrMrEHMMUy\nmaUTMQUe0EefRYUO780nMQQrWfubwpsWIHTVc2LTXUt6Eo6L3P0Ma6/zAoGAanWV\nBe/BYxon+GklcLxNflxwAuzY88DZPtv1APTIneFXs5IYsFwqeXHu64lRFQJn2sCi\nod8d8CoQojLo29AOzmDJPie1+X9gQd6l+2FpZGuKNzaQvEvwXWD5SPGMESSwGTWI\n36o0oT/fd6q1e9//Jh9iFfYRzZfP3ozvPLsQIb0CgYBOzcCs5dNStr4c507Eai2L\nKrfTf+Bg4BrTcUWF180GVF034P1QNnC42D39FepVrXHxqoKav+sHbl225JiXm1E2\niNhm5uVN8I/dTRIHpuPMNRt8yvdN5p4oMw8xh2LimFJc8IXnba0BAE1piElxfqnt\nqbp2v7+euZpCLBB9WYXCZA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "esperus-cms@esperus-cms.iam.gserviceaccount.com",
+  "client_id": "113450847945943454806",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/esperus-cms%40esperus-cms.iam.gserviceaccount.com"
+}

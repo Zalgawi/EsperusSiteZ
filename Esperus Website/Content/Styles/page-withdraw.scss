@@ -1,0 +1,33 @@
+﻿@import 'Globals/_variables.scss';
+@import 'Globals/_mixins.scss';
+
+body {
+  .withdraw-form-wrapper {
+    .withdraw-form {
+      .form-group {
+        display: flex;
+        margin: 0;
+
+        &.captcha {
+          flex-direction: column;
+        }
+
+        p {
+          min-width: 8px;
+        }
+      }
+
+      input, select, textarea {
+        font-size: 1.4rem;
+        margin-bottom: 16px;
+        min-height: 32px;
+        margin-right: 8px;
+        border-radius: .25rem !important;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

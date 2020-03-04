@@ -1,0 +1,15 @@
+﻿$colour-black-primary: #000000;
+$colour-black-secondary: #353839; // "Crayola Onyx"
+$colour-grey-primary: #ECF0F1;
+$colour-grey-secondary: #D7E0E2;
+$colour-white-primary: #FFFFFF;
+$colour-blue-primary: #007BFF;
+$colour-blue-secondary: #0084A1; // "Esperus Blue"
+
+$shadow-box-default: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+$shadow-box-input-focus: 0 0px 5px 0 rgba(0, 123, 255, 0.25);
+$shadow-text-default: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+
+$transition-link-default: all 0.15s ease-in-out;
+$transition-sidenav-open: color 0.15s ease-in-out, opacity 0.5s ease-in;
+$transition-sidenav-close: color 0.15s ease-in-out, opacity 0.15s ease-out;

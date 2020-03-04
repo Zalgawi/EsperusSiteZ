@@ -1,0 +1,254 @@
+[
+  {
+    "outputFileName": "Content/Scripts/main.min.js",
+    "inputFiles": [
+      "Content/Scripts/main.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/contact.min.js",
+    "inputFiles": [
+      "Content/Scripts/contact.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/admin-panel.min.js",
+    "inputFiles": [
+      "Content/Scripts/admin-panel.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Styles/Fonts/nunito.min.css",
+    "inputFiles": [
+      "Content/Styles/Fonts/nunito.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Styles/Fonts/montserrat.min.css",
+    "inputFiles": [
+      "Content/Styles/Fonts/montserrat.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/bootstrap-treeview.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/bootstrap-treeview.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/main.form.min.js",
+    "inputFiles": [
+      "Content/Scripts/main.form.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/admin.min.js",
+    "inputFiles": [
+      "Content/Scripts/admin.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/admin.injector.min.js",
+    "inputFiles": [
+      "Content/Scripts/admin.injector.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/main.carousel.min.js",
+    "inputFiles": [
+      "Content/Scripts/main.carousel.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/admin.reports.min.js",
+    "inputFiles": [
+      "Content/Scripts/admin.reports.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.cleanpaste.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.cleanpaste.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.lineheight.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.lineheight.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.history.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.history.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.fontsize.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.fontsize.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.colors.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.colors.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.upload.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.upload.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.table.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.table.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.specialchars.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.specialchars.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.preformatted.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.preformatted.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.pasteimage.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.pasteimage.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.pasteembed.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.pasteembed.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.noembed.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Plugins/trumbowyg.noembed.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/trumbowyg.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/trumbowyg.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/Libs/Trumbowyg/Langs/ca.min.min.js",
+    "inputFiles": [
+      "Content/Scripts/Libs/Trumbowyg/Langs/ca.min.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Styles/Fonts/fontawesome.min.css",
+    "inputFiles": [
+      "Content/Styles/Fonts/fontawesome.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/admin.old.min.js",
+    "inputFiles": [
+      "Content/Scripts/admin.old.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Scripts/admin.editor.min.js",
+    "inputFiles": [
+      "Content/Scripts/admin.editor.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.injector.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.injector.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.editor.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.editor.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.old.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.old.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.reports.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.reports.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/Libs/Trumbowyg/trumbowyg.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/Libs/Trumbowyg/trumbowyg.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/Libs/bootstrap-treeview.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/Libs/bootstrap-treeview.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Styles/Libs/bootstrap-treeview.min.css",
+    "inputFiles": [
+      "Areas/Admin/Content/Styles/Libs/bootstrap-treeview.css"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/Libs/bootstrap.treeview.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/Libs/bootstrap.treeview.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/Styles/partials-mobile.min.css",
+    "inputFiles": [
+      "Content/Styles/partials-mobile.css"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/Libs/sortable.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/Libs/sortable.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.workbench.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.workbench.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.pages.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.pages.js"
+    ]
+  },
+  {
+    "outputFileName": "Areas/Admin/Content/Scripts/admin.gallery.min.js",
+    "inputFiles": [
+      "Areas/Admin/Content/Scripts/admin.gallery.js"
+    ]
+  }
+]

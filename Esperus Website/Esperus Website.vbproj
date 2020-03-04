@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F4DBA403-50E6-43C6-BD21-961C3F5EEB0B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Esperus</RootNamespace>
+    <AssemblyName>Esperus Website</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44357</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Esperus Website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TypeScriptTarget>ES2015</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>ES6</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <PublishDatabaseSettings>&lt;Objects&gt;&lt;ObjectGroup Name="DefaultConnection-Deployment" Order="1"&gt;&lt;Destination Path="" /&gt;&lt;Object Type="DbFullSql"&gt;&lt;PreSource Path="Data Source=ESPSERVER2\SQL2008R2%3bInitial Catalog=&amp;quot%3bAdmin Panel Test&amp;quot%3b%3bUser ID=sa%3bPassword=SA_SA" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" /&gt;&lt;Source Path="obj\Debug\AutoScripts\DefaultConnection-Deployment_SchemaOnly.sql" Transacted="True" /&gt;&lt;/Object&gt;&lt;/ObjectGroup&gt;&lt;ObjectGroup Name="RemoteConnection-Deployment" Order="2"&gt;&lt;Destination Path="" /&gt;&lt;Object Type="DbFullSql"&gt;&lt;PreSource Path="Data Source=91.208.99.2,3367%3bInitial Catalog=esperus%3bUser ID=esperus%3bPassword=4bh49kac" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" /&gt;&lt;Source Path="obj\Debug\AutoScripts\RemoteConnection-Deployment_SchemaOnly.sql" Transacted="True" /&gt;&lt;/Object&gt;&lt;/ObjectGroup&gt;&lt;/Objects&gt;</PublishDatabaseSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Esperus Website.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AngleSharp, Version=0.9.9.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
+      <HintPath>..\packages\AngleSharp.0.9.11\lib\net45\AngleSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXssLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.42.0\lib\net45\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Analytics.v3, Version=1.42.0.1720, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Analytics.v3.1.42.0.1720\lib\net45\Google.Apis.Analytics.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.42.0\lib\net45\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.42.0\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.42.0\lib\net45\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.42.0.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.42.0\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.3.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AntiXSS.4.3.0\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=61c49a1a9e79cc28, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlSanitizer.4.0.217\lib\net45\HtmlSanitizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.7\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.4.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.4.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.4.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="reCAPTCHA.MVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\reCAPTCH.MVC.1.0.1\lib\net45\reCAPTCHA.MVC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.7.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.7\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\FilterConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.vb" />
+    <Compile Include="Areas\Admin\App_Start\BundleConfig.vb" />
+    <Compile Include="Areas\Admin\App_Start\FilterConfig.vb" />
+    <Compile Include="Areas\Admin\Models\Attributes\ValidateSession.vb" />
+    <Compile Include="Areas\Admin\Models\BaseEditorModel.vb" />
+    <Compile Include="Areas\Admin\Models\Interfaces\IEditorModel.vb" />
+    <Compile Include="Areas\Admin\App_Start\RouteConfig.vb" />
+    <Compile Include="Controllers\ErrorController.vb" />
+    <Compile Include="Areas\Admin\Controllers\AdminController.vb" />
+    <Compile Include="Data\ContactDataManager.vb" />
+    <Compile Include="Areas\Admin\Data\AssetDataManager.vb" />
+    <Compile Include="Areas\Admin\Data\PageDataManager.vb" />
+    <Compile Include="Areas\Admin\Data\SectionDataManager.vb" />
+    <Compile Include="Areas\Admin\Data\UserDataManager.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Admin\Data\ContentDataManager.vb" />
+    <Compile Include="Areas\Admin\Models\AssetModel.vb" />
+    <Compile Include="Areas\Admin\Models\UserModel.vb" />
+    <Compile Include="Areas\Admin\Models\ViewMessageModel.vb" />
+    <Compile Include="Areas\Admin\Models\Result.vb" />
+    <Compile Include="Models\Views\BaseViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\Views\HomeViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\Views\ImagesViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\Views\LoginViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\Views\SettingsAccountViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\DirectoryItem.vb" />
+    <Compile Include="Areas\Admin\Services\AnalyticsService.vb" />
+    <Compile Include="Services\ContentService.vb" />
+    <Compile Include="Areas\Admin\Services\DataService.vb" />
+    <Compile Include="Areas\Admin\Services\EditorService.vb" />
+    <Compile Include="Areas\Admin\Services\ImageService.vb" />
+    <Compile Include="Areas\Admin\Services\LoginService.vb" />
+    <Compile Include="Areas\Admin\Models\ContentModel.vb" />
+    <Compile Include="Models\Views\ContentPageViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\TreeViewNodeStateModel.vb" />
+    <Compile Include="Areas\Admin\Models\Views\SettingsViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\Views\EditorViewModel.vb" />
+    <Compile Include="Areas\Admin\Models\TreeViewNodeModel.vb" />
+    <Compile Include="Areas\Admin\Models\PageModel.vb" />
+    <Compile Include="Areas\Admin\Models\SectionModel.vb" />
+    <Compile Include="Models\Views\Pages\ContactViewModel.vb" />
+    <Compile Include="Models\Views\Pages\DemoViewModel.vb" />
+    <Compile Include="Models\MessageModel.vb" />
+    <Compile Include="Models\Views\Pages\WithdrawViewModel.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controllers\SiteController.vb" />
+    <Compile Include="Services\Filters\ElmahHandledErrorLoggerFilter.vb" />
+    <Compile Include="Services\MessagingService.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Content\Scripts\admin.gallery.js" />
+    <Content Include="Areas\Admin\Content\Scripts\admin.gallery.min.js">
+      <DependentUpon>admin.gallery.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\admin.pages.js" />
+    <Content Include="Areas\Admin\Content\Scripts\admin.pages.min.js">
+      <DependentUpon>admin.pages.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\admin.workbench.min.js">
+      <DependentUpon>admin.pages.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\bootstrap.treeview.min.js">
+      <DependentUpon>bootstrap.treeview.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-editor-mobile.css">
+      <DependentUpon>admin.editor.mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-editor-mobile.min.css">
+      <DependentUpon>admin-editor-mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-mobile.css">
+      <DependentUpon>admin.mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-mobile.min.css">
+      <DependentUpon>admin-mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.editor.css">
+      <DependentUpon>admin.editor.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.editor.min.css">
+      <DependentUpon>admin.editor.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.editor.mobile.css">
+      <DependentUpon>admin.editor.mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.editor.mobile.min.css">
+      <DependentUpon>admin.editor.mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.mobile.css">
+      <DependentUpon>admin.mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.mobile.min.css">
+      <DependentUpon>admin.mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Globals\_mixins.css">
+      <DependentUpon>_admin.mixins.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Globals\_mixins.min.css">
+      <DependentUpon>_mixins.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Globals\_variables.css">
+      <DependentUpon>_admin.variables.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Globals\_variables.min.css">
+      <DependentUpon>_variables.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Libs\bootstrap.treeview.css">
+      <DependentUpon>bootstrap.treeview.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Libs\bootstrap.treeview.min.css">
+      <DependentUpon>bootstrap.treeview.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Images\cms-logo-1.png" />
+    <Content Include="Areas\Admin\Content\Styles\admin-editor.css">
+      <DependentUpon>admin.editor.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-editor.min.css">
+      <DependentUpon>admin-editor.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\admin.injector.js" />
+    <Content Include="Areas\Admin\Content\Scripts\admin.injector.min.js">
+      <DependentUpon>admin.injector.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\admin.min.js">
+      <DependentUpon>admin.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\admin.reports.js" />
+    <Content Include="Areas\Admin\Content\Scripts\admin.reports.min.js">
+      <DependentUpon>admin.reports.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\Plugins\trumbowyg.cleanpaste.js" />
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\Plugins\trumbowyg.history.js" />
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\Plugins\trumbowyg.history.min.js">
+      <DependentUpon>trumbowyg.history.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\Plugins\trumbowyg.specialchars.js" />
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\Plugins\trumbowyg.specialchars.min.js">
+      <DependentUpon>trumbowyg.specialchars.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\Plugins\trumbowyg.cleanpaste.min.js">
+      <DependentUpon>trumbowyg.cleanpaste.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Images\Logos\Brands\Clients\Carducci\carducci-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Cordings\cordings-2-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Davina\davina-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Early Days\early-days-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Emma Willis\emma-willis-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Goodwood\goodwood-2-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\James Lock\james-lock-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\James Lock\james-lock-2-w.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Javelin\javelin-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Jeffrey West\jeffery-west-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Little Mistress\little-mistress-2-w.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Melin Tregwynt\melin-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Mini-La-Mode\mini-la-mode-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Pan World Brands\pwb-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Pretty Eccentric\pretty-eccentric-logo-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Queens Park Rangers\queens-park-rangers-2-w.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Surfanic\surfanic-1-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Timberland\timberland-2-w.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Wyse\wyse-london-logo-1-1.jpg" />
+    <Content Include="Content\Scripts\main.carousel.es5.js">
+      <DependentUpon>main.carousel.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.carousel.es5.min.js">
+      <DependentUpon>main.carousel.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.carousel.js" />
+    <Content Include="Content\Scripts\main.carousel.min.js">
+      <DependentUpon>main.carousel.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.es5.js">
+      <DependentUpon>main.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.es5.min.js">
+      <DependentUpon>main.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.form.es5.js">
+      <DependentUpon>main.form.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.form.es5.min.js">
+      <DependentUpon>main.form.es5.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\main.form.min.js">
+      <DependentUpon>main.form.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-panel.css">
+      <DependentUpon>admin.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin-panel.min.css">
+      <DependentUpon>admin-panel.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.css">
+      <DependentUpon>admin.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\admin.min.css">
+      <DependentUpon>admin.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Fonts\fontawesome.css" />
+    <Content Include="Content\Styles\Fonts\fontawesome.min.css">
+      <DependentUpon>fontawesome.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Fonts\montserrat.css" />
+    <Content Include="Content\Styles\Fonts\montserrat.min.css">
+      <DependentUpon>montserrat.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Fonts\nunito.css" />
+    <Content Include="Content\Styles\Fonts\nunito.min.css">
+      <DependentUpon>nunito.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Libs\animate.css" />
+    <Content Include="Content\Styles\Libs\animate.min.css">
+      <DependentUpon>animate.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Libs\aos.css" />
+    <Content Include="Content\Styles\Libs\aos.min.css">
+      <DependentUpon>aos.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Libs\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\icons.svg" />
+    <Content Include="Content\Images\Backgrounds\Carousel\carousel-image-1-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Carousel\carousel-image-2-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Carousel\carousel-image-3-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Carousel\carousel-image-4-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Carousel\carousel-image-5-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Home\home-background-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Home\home-background-2.jpg" />
+    <Content Include="Content\Images\Backgrounds\Home\home-background-3.jpg" />
+    <Content Include="Content\Images\Backgrounds\Home\home-background-4.jpg" />
+    <Content Include="Content\Images\Backgrounds\Home\home-background-5.jpg" />
+    <Content Include="Content\Images\Backgrounds\Home\home-background-6.jpg" />
+    <Content Include="Content\Images\Backgrounds\Testimonials\cordings-testimonial-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Testimonials\emma-willis-page-header-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Testimonials\jeffery-west-page-header-1.jpg" />
+    <Content Include="Content\Images\Backgrounds\Testimonials\qpr-page-header-1.jpg" />
+    <Content Include="Content\Images\body-image-1.jpg" />
+    <Content Include="Content\Images\body-image-2.jpg" />
+    <Content Include="Content\Images\bullet.png" />
+    <Content Include="Content\Images\ecommerce-image-1-1.jpg" />
+    <Content Include="Content\Images\epos-promo-1-1.jpg" />
+    <Content Include="Content\Images\esperus-promo-1.jpg" />
+    <Content Include="Content\Images\esperus-promo-2.jpg" />
+    <Content Include="Content\Images\esperus-promo-25-years.png" />
+    <Content Include="Content\Images\home-image-1-1.jpg" />
+    <Content Include="Content\Images\home-image-2-1.jpg" />
+    <Content Include="Content\Images\home-image-3-1.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Caramel\caramel-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Caramel\caramel-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Carducci\carducci-logo-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Carducci\carducci-logo-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Cordings\cordings-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Davina\davina-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Davina\davina-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Duchamp\duchamp-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Early Days\early-days-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Early Days\early-days-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Emma Willis\emma-willis-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Emma Willis\emma-willis-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Goodwood\goodwood-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Goodwood\goodwood-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\James Lock\james-lock-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Javelin\javelin-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Javelin\javelin-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Jeffrey West\jeffery-west-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Jeffrey West\jeffery-west-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Little Mistress\little-mistress-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Little Mistress\little-mistress-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Melin Tregwynt\melin-tregwynt-1-b.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Mini-La-Mode\mini-la-mode-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Mini-La-Mode\mini-la-mode-2-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Pan World Brands\pan-world-brands-logo-1-o.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Pretty Eccentric\pretty-eccentric-logo-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Queens Park Rangers\queens-park-rangers-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Queens Park Rangers\queens-park-rangers-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Sahara\sahara-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Sahara\sahara-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Surfanic\surfanic-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Surfanic\surfanic-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Timberland\timberland-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Timberland\timberland-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Wyse\wyse-london-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Clients\Wyse\wyse-london-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\Arnotts\arnotts-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\Arnotts\arnotts-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\Boundary\boundary-logo-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\Boundary\boundary-logo-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\Debenhams\debenhams-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\Debenhams\debenhams-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\House Fraser\hof-logo-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\House Fraser\hof-logo-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Concessions\John Lewis\john-lewis-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Aures\aures-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Aures\aures-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\JOOR\joor-1-t-sm.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Pegasus Opera\opera-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Pegasus\pegasus-2-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Pegasus\pegasus-2-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Sage 50\sage-50-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Sage\sage-1-t-sm.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Sage\sage-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Sage\sage-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Sun Accounts\sun-accounts-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Sun Accounts\sun-accounts-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\VeriFone\verifone-1-t-sm.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\VeriFone\verifone-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\VeriFone\verifone-1-w.jpg" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Xero\xero-1-t-sm.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Xero\xero-1-t.png" />
+    <Content Include="Content\Images\Logos\Brands\Integrations\Xero\xero-2-t-sm.png" />
+    <Content Include="Content\Images\mpos-promo-1.jpg" />
+    <Content Include="Content\Images\mpos-promo-2-1.jpg" />
+    <Content Include="Content\Images\Logos\esperus-logo-transparent-1.png" />
+    <Content Include="Content\Images\Logos\esperus-logo-transparent-2.png" />
+    <Content Include="Content\Images\Icons\link-icon-w-1.png" />
+    <Content Include="Content\Images\Icons\link-icon-w-f-1.png" />
+    <Content Include="Content\Styles\Libs\bootstrap.css" />
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\Plugins\trumbowyg.specialchars.css">
+      <DependentUpon>trumbowyg.specialchars.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\Plugins\trumbowyg.specialchars.min.css">
+      <DependentUpon>trumbowyg.specialchars.css</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\trumbowyg.css">
+      <DependentUpon>trumbowyg.scss</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\trumbowyg.min.css">
+      <DependentUpon>trumbowyg.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\main-mobile.css">
+      <DependentUpon>main-mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\main-mobile.min.css">
+      <DependentUpon>main-mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Images\qpr-image-1.jpg" />
+    <Content Include="Content\Images\wholesale-image-1-1.jpg" />
+    <Content Include="Areas\Admin\Content\Scripts\admin.js" />
+    <Content Include="Areas\Admin\Content\Scripts\admin-panel.min.js">
+      <DependentUpon>admin.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\adminpanel.min.js">
+      <DependentUpon>admin.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\contact.min.js">
+      <DependentUpon>main.form.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\Libs\aos.js" />
+    <Content Include="Content\Scripts\Libs\aos.min.js">
+      <DependentUpon>aos.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\bootstrap.treeview.js" />
+    <Content Include="Content\Scripts\Libs\bootstrap.min.js">
+      <DependentUpon>bootstrap.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\Libs\jquery.min.js">
+      <DependentUpon>jquery.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\Libs\jquery.slim.min.js">
+      <DependentUpon>jquery.slim.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\Libs\modernizr.min.js">
+      <DependentUpon>modernizr.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\Libs\popper.min.js">
+      <DependentUpon>popper.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Scripts\Libs\sortable.js" />
+    <Content Include="Content\Scripts\Libs\sortable.min.js">
+      <DependentUpon>sortable.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\trumbowyg.js" />
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\trumbowyg.min.js">
+      <DependentUpon>trumbowyg.js</DependentUpon>
+    </Content>
+    <Content Include="Areas\Admin\Content\Scripts\Libs\Trumbowyg\UI\icons.svg" />
+    <Content Include="Content\Scripts\main.min.js">
+      <DependentUpon>main.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-testimonials-mobile.css">
+      <DependentUpon>page-testimonials-mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-testimonials-mobile.min.css">
+      <DependentUpon>page-testimonials-mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-testimonials.css">
+      <DependentUpon>page-testimonials.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-testimonials.min.css">
+      <DependentUpon>page-testimonials.css</DependentUpon>
+    </Content>
+    <None Include="Content\Styles\page-timeline-mobile.scss" />
+    <Content Include="Content\Styles\page-timeline-mobile.css">
+      <DependentUpon>page-timeline-mobile.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-timeline-mobile.min.css">
+      <DependentUpon>page-timeline-mobile.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-timeline.css">
+      <DependentUpon>page-timeline.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-timeline.min.css">
+      <DependentUpon>page-timeline.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-withdraw.css">
+      <DependentUpon>page-withdraw.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\page-withdraw.min.css">
+      <DependentUpon>page-withdraw.css</DependentUpon>
+    </Content>
+    <Content Include="sitemap.xml" />
+    <Content Include="touch-icon-ipad-retina.png" />
+    <Content Include="touch-icon-ipad.png" />
+    <Content Include="touch-icon-iphone-retina.png" />
+    <Content Include="touch-icon-iphone.png" />
+    <Content Include="website-icon-192.png" />
+    <Content Include="website-icon-512.png" />
+    <Content Include="Content\Styles\main-mobile.scss" />
+    <Content Include="Content\Styles\main.css">
+      <DependentUpon>main.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\main.scss" />
+    <Content Include="Content\Files\Case Studies\cordings-case-study.pdf" />
+    <Content Include="Content\Styles\Globals\_mixins.css">
+      <DependentUpon>_mixins.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Globals\_mixins.min.css">
+      <DependentUpon>_mixins.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Globals\_mixins.scss" />
+    <Content Include="Content\Styles\Globals\_variables.css">
+      <DependentUpon>_variables.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Globals\_variables.min.css">
+      <DependentUpon>_variables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\Styles\Globals\_variables.scss" />
+    <Content Include="manifest.json" />
+    <Content Include="Content\Files\Case Studies\emma-willis-case-study.pdf" />
+    <Content Include="Content\Files\Case Studies\jeffery-west-magazine-article.pdf" />
+    <Content Include="Content\Files\Case Studies\qpr-case-study.pdf" />
+    <Content Include="Content\Files\Brochures\crm-ecommerce-leaflet.pdf" />
+    <Content Include="Content\Files\Brochures\ereceipts-retail-leaflet.pdf" />
+    <Content Include="Content\Files\Brochures\genesis-ecommerce-solution-brochure.pdf" />
+    <Content Include="Content\Files\Brochures\genesis-retail-solution-brochure.pdf" />
+    <Content Include="Content\Files\Brochures\genesis-wholesale-solution-brochure.pdf" />
+    <Content Include="Content\Files\Brochures\mpos-retail-leaflet.pdf" />
+    <Content Include="Content\Files\Brochures\stadia-retail-leaflet.pdf" />
+    <Content Include="Areas\Admin\Content\Styles\admin.scss" />
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Content\Styles\Globals\_admin.mixins.scss" />
+    <Content Include="Areas\Admin\Content\Styles\Globals\_admin.variables.scss" />
+    <Content Include="Areas\Admin\Content\Styles\admin.mobile.scss" />
+    <Content Include="Areas\Admin\Views\Shared\Partials\Sidebar.vbhtml" />
+    <Content Include="Areas\Admin\Content\Styles\admin.editor.mobile.scss" />
+    <Content Include="Areas\Admin\Content\Styles\Libs\bootstrap.treeview.scss" />
+    <Content Include="Areas\Admin\Views\Shared\Layouts\_NestedLayout.vbhtml" />
+    <Content Include="Areas\Admin\Views\_ViewStart.vbhtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partials\Toast.vbhtml" />
+    <Content Include="Areas\Admin\Views\Admin\Pages.vbhtml" />
+    <None Include="bundleconfig.json" />
+    <Content Include="bundleconfig.json.bindings">
+      <DependentUpon>bundleconfig.json</DependentUpon>
+    </Content>
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Content\Fonts\fa-brands-400.eot" />
+    <Content Include="Content\Fonts\fa-brands-400.ttf" />
+    <Content Include="Content\Fonts\fa-brands-400.woff" />
+    <Content Include="Content\Fonts\fa-brands-400.woff2" />
+    <Content Include="Content\Fonts\fa-regular-400.eot" />
+    <Content Include="Content\Fonts\fa-regular-400.ttf" />
+    <Content Include="Content\Fonts\fa-regular-400.woff" />
+    <Content Include="Content\Fonts\fa-regular-400.woff2" />
+    <Content Include="Content\Fonts\fa-solid-900.eot" />
+    <Content Include="Content\Fonts\fa-solid-900.ttf" />
+    <Content Include="Content\Fonts\fa-solid-900.woff" />
+    <Content Include="Content\Fonts\fa-solid-900.woff2" />
+    <Content Include="Content\Files\Case Studies\jeffery-west-case-study.pdf" />
+    <Content Include="Areas\Admin\Content\Tokens\esperus-cms-e52a653700c6.json" />
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\trumbowyg.scss" />
+    <Content Include="Areas\Admin\Content\Styles\Libs\Trumbowyg\Plugins\trumbowyg.specialchars.scss" />
+    <Content Include="Areas\Admin\Content\Styles\admin.editor.scss" />
+    <Content Include="Content\Styles\page-testimonials.scss" />
+    <Content Include="Content\Styles\page-withdraw.scss" />
+    <Content Include="Content\Styles\page-timeline.scss" />
+    <Content Include="Content\Styles\page-testimonials-mobile.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="robots.txt" />
+    <Content Include="Content\Scripts\main.form.js" />
+    <Content Include="Content\Scripts\Libs\bootstrap.js" />
+    <Content Include="Content\Scripts\Libs\jquery.js" />
+    <Content Include="Content\Scripts\Libs\jquery.slim.js" />
+    <Content Include="Content\Scripts\Libs\popper.js" />
+    <Content Include="Content\Scripts\main.js" />
+    <Content Include="Content\Scripts\Libs\modernizr.js" />
+    <Content Include="Views\Shared\Partials\Footer.vbhtml" />
+    <Content Include="Views\Shared\Partials\Header.vbhtml" />
+    <Content Include="Views\Site\Retail.vbhtml" />
+    <Content Include="Views\Site\Wholesale.vbhtml" />
+    <Content Include="Views\Site\Ecommerce.vbhtml" />
+    <Content Include="Views\Site\Testimonials.vbhtml" />
+    <Content Include="Views\Site\About.vbhtml" />
+    <Content Include="Views\Shared\Partials\Header\Legand.vbhtml" />
+    <Content Include="Views\Shared\Partials\Header\Carousel.vbhtml" />
+    <Content Include="Views\Site\Clients.vbhtml" />
+    <Content Include="Views\Site\Cookies.vbhtml" />
+    <Content Include="Views\Site\Privacy.vbhtml" />
+    <Content Include="Views\Site\Copyright.vbhtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Error\Index.vbhtml" />
+    <Content Include="Views\Shared\Partials\Sidebar.vbhtml" />
+    <Content Include="Areas\Admin\Views\Shared\Layouts\_AdminLayout.vbhtml" />
+    <Content Include="Areas\Admin\Views\Admin\Index.vbhtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partials\Header.vbhtml" />
+    <Content Include="Views\Site\Withdraw.vbhtml" />
+    <Content Include="Areas\Admin\Views\Admin\Login.vbhtml" />
+    <Content Include="Areas\Admin\Views\Admin\Account.vbhtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partials\Editors\TextEditor.vbhtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partials\Editors\ImageEditor.vbhtml" />
+    <Content Include="Areas\Admin\Views\Shared\Partials\Editors\LinkEditor.vbhtml" />
+    <Content Include="Areas\Admin\Views\Admin\Images.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\_ViewStart.vbhtml" />
+    <Content Include="Views\Site\Contact.vbhtml" />
+    <Content Include="Views\Site\Index.vbhtml" />
+    <Content Include="Views\Shared\Layouts\_SiteLayout.vbhtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
+    <Folder Include="Areas\Admin\Resources\Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51046</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

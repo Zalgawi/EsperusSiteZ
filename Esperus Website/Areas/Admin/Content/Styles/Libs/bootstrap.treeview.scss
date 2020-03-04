@@ -1,0 +1,24 @@
+﻿body {
+  .treeview {
+    span {
+      &.indent {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      &.icon {
+        width: 12px;
+        margin-right: 5px;
+      }
+    }
+
+    .node-disabled {
+      color: silver;
+      cursor: not-allowed;
+    }
+
+    .list-group-item {
+      cursor: pointer;
+    }
+  }
+}

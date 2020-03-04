@@ -1,0 +1,16 @@
+﻿body .withdraw-form-wrapper .withdraw-form .form-group {
+  display: flex;
+  margin: 0; }
+  body .withdraw-form-wrapper .withdraw-form .form-group.captcha {
+    flex-direction: column; }
+  body .withdraw-form-wrapper .withdraw-form .form-group p {
+    min-width: 8px; }
+
+body .withdraw-form-wrapper .withdraw-form input, body .withdraw-form-wrapper .withdraw-form select, body .withdraw-form-wrapper .withdraw-form textarea {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  min-height: 32px;
+  margin-right: 8px;
+  border-radius: .25rem !important; }
+  body .withdraw-form-wrapper .withdraw-form input:last-child, body .withdraw-form-wrapper .withdraw-form select:last-child, body .withdraw-form-wrapper .withdraw-form textarea:last-child {
+    margin-right: 0; }
